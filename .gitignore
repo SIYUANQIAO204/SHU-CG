@@ -1,0 +1,67 @@
+### --- 编译产物 (Build Artifacts) --- ###
+# 排除所有 build 文件夹
+[Bb]uild/
+bin/
+obj/
+out/
+
+# 排除常见的可执行文件后缀
+*.exe
+*.out
+*.app
+*.dll
+*.so*
+*.dylib
+
+### --- 中间产物 (Intermediate Files) --- ###
+*.o
+*.obj
+*.a
+*.lib
+*.la
+*.lo
+*.pch
+*.gch
+
+### --- 构建系统相关 (Build System) --- ###
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# Makefile
+.deps/
+.libs/
+Makefile.in
+
+### --- IDE / 编辑器配置 --- ###
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.filters
+
+# VS Code
+#.vscode/
+# 注意：如果你想分享任务配置，可以不忽略 .vscode/tasks.json
+
+# CLion / JetBrains
+#.idea/
+cmake-build-*/
+
+### --- 日志与调试 --- ###
+*.log
+*.tlog
+*.lastbuildstate
+*.pdb
+*.idb
+
+### --- 系统及其他 --- ###
+.DS_Store
+Thumbs.db
+*.swp
